@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Ortopedia/static/css/main.bc01a42f.css",
-    "main.js": "/Ortopedia/static/js/main.4350366e.js",
-    "static/js/453.8679eca6.chunk.js": "/Ortopedia/static/js/453.8679eca6.chunk.js",
-    "static/media/dr.png": "/Ortopedia/static/media/dr.8f3f277a0ecc3402abad.png",
-    "static/media/banner.png": "/Ortopedia/static/media/banner.6ec073f6d3e6e18e4178.png",
-    "static/media/interweb.png": "/Ortopedia/static/media/interweb.d8a1df99affd8bc211b8.png",
-    "static/media/logo.png": "/Ortopedia/static/media/logo.e4375ae6475e593f3e63.png",
-    "static/media/logo.svg": "/Ortopedia/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Ortopedia/index.html",
-    "main.bc01a42f.css.map": "/Ortopedia/static/css/main.bc01a42f.css.map",
-    "main.4350366e.js.map": "/Ortopedia/static/js/main.4350366e.js.map",
-    "453.8679eca6.chunk.js.map": "/Ortopedia/static/js/453.8679eca6.chunk.js.map"
+    "main.css": "/integradoraOrtopedia/static/css/main.bc01a42f.css",
+    "main.js": "/integradoraOrtopedia/static/js/main.88d8a0b8.js",
+    "static/js/453.8679eca6.chunk.js": "/integradoraOrtopedia/static/js/453.8679eca6.chunk.js",
+    "static/media/dr.png": "/integradoraOrtopedia/static/media/dr.8f3f277a0ecc3402abad.png",
+    "static/media/banner.png": "/integradoraOrtopedia/static/media/banner.6ec073f6d3e6e18e4178.png",
+    "static/media/interweb.png": "/integradoraOrtopedia/static/media/interweb.d8a1df99affd8bc211b8.png",
+    "static/media/logo.png": "/integradoraOrtopedia/static/media/logo.e4375ae6475e593f3e63.png",
+    "static/media/logo.svg": "/integradoraOrtopedia/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/integradoraOrtopedia/index.html",
+    "main.bc01a42f.css.map": "/integradoraOrtopedia/static/css/main.bc01a42f.css.map",
+    "main.88d8a0b8.js.map": "/integradoraOrtopedia/static/js/main.88d8a0b8.js.map",
+    "453.8679eca6.chunk.js.map": "/integradoraOrtopedia/static/js/453.8679eca6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc01a42f.css",
-    "static/js/main.4350366e.js"
+    "static/js/main.88d8a0b8.js"
   ]
 }
