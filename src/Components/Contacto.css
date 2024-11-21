@@ -1,0 +1,66 @@
+.contact-us-section {
+    padding: 40px 20px;
+    background-color: #f7f7fc;
+  }
+  
+  .contact-us-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .contact-us-card {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #6c5ce7;
+    margin-bottom: 15px;
+    border-bottom: 5px solid #fad7a0;
+    text-align: left;
+  }
+  
+  .contact-list,
+  .payment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-list li,
+  .payment-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #6c5ce7;
+  }
+  
+  .map-container {
+    margin: 15px 0;
+  }
+  
+  .google-map {
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border-radius: 5px;
+  }
+  
+  .map-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  

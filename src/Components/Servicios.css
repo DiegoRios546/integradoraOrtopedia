@@ -1,0 +1,118 @@
+/* General */
+.simple-services-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e8eaf6, #fce4ec);
+    color: #4a4a4a;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #4d4d4d;
+  }
+  
+  /* Grid */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Card */
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-icon {
+    font-size: 2.5rem;
+    color: #6c5ce7;
+    margin: 15px;
+  }
+  
+  .service-content {
+    flex-grow: 1;
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .divider {
+    height: 3px;
+    background: #6c5ce7;
+    margin: 10px 0;
+    border-radius: 2px;
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+  }
+  /* Botón */
+  .toggle-btn {
+    background: #6c5ce7;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .toggle-btn:hover {
+    background: #4c4ab8;
+  }
+  
+  /* Detalles */
+  .service-details {
+    margin-top: 15px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    width: 100%;
+    border-top: 3px solid #6c5ce7; /* Línea superior para más cohesión */
+  }
+
+    /* Responsividad: Barra de navegación móvil */
+    @media (max-width: 768px) {
+          /* Grid */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+    gap: 20px;
+  }
+  .service-content {
+    margin: auto;
+    display: block;
+  }
+      }
+  

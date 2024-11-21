@@ -1,0 +1,246 @@
+/* Estilo general para el banner */
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background: #f5f5f5;  /* Fondo suave */
+    overflow: hidden;  /* Evitar que las figuras sobresalgan del banner */
+    border-radius: 10px; /* Bordes redondeados para suavizar el diseño */
+  }
+  
+  /* Estilo de la imagen */
+  .banner-image {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-image img {
+    margin-top: 1rem;
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease; /* Animación al pasar el ratón */
+  }
+  
+  .banner-image img:hover {
+    transform: scale(1.05); /* Efecto de zoom cuando pasa el ratón */
+  }
+  
+  /* Estilo del contenido (texto y botón) */
+  .banner-content {
+    flex: 1;
+    padding: 30px;
+    text-align: left; /* Alineación a la izquierda para mejor lectura */
+    position: relative;
+    z-index: 10;
+    color: #ffffff;
+  }
+  
+  /* Título principal */
+  .main-heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #a29bfe; /* Morado claro */
+    line-height: 1.2;
+  }
+  
+  /* Subtítulo */
+  .sub-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fad7a0; /* Color suave - Peach */
+    line-height: 1.6;
+    font-weight: 900;
+    text-shadow: 50px black;
+  }
+  
+  /* Frase de llamada a la acción */
+  .call-to-action {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: black;
+  }
+
+  .durango{
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: black;
+    border-bottom: 3px solid black;
+    width: 20%;
+  }
+  
+  /* Estilo para el botón de acción */
+  .cta-button {
+    background-color: #a29bfe; /* Morado claro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    padding: 18px 35px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .cta-button:hover {
+    background-color: #fad7a0; /* Color suave cuando pasa el ratón */
+    color: #a29bfe; /* Cambia el texto a morado */
+    transform: scale(1.05); /* Efecto de aumento */
+  }
+  
+  /* Fondo con figuras geométricas */
+  .banner-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, #a29bfe 20%, #fad7a0 50%, #a29bfe 80%);
+    clip-path: polygon(10% 10%, 90% 0%, 100% 100%, 0% 100%); /* Forma suave */
+    z-index: 0;
+    opacity: 0.2; /* Fondo más suave */
+    animation: moveBackground 6s infinite ease-in-out; /* Animación de las figuras */
+  }
+
+/* Estilos para los botones flotantes */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+  }
+  
+  .floating-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #a29bfe;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    position: relative; /* Para posicionar el texto */
+  }
+  
+  .floating-button:hover {
+    background-color: #fad7a0;
+    transform: scale(1.1);
+  }
+  
+  /* Estilo de los botones flotantes específicos */
+  .floating-button.phone {
+    background-color: #a29bfe;
+  }
+  
+  .floating-button.phone:hover {
+    background-color: #fad7a0;
+  }
+  
+  .floating-button.email {
+    background-color: #a29bfe;
+  }
+  
+  .floating-button.email:hover {
+    background-color: #fad7a0;
+  }
+  
+  /* Texto que aparece en el hover */
+  .floating-button .hover-text {
+    display: none;
+    position: relative;
+    bottom: 70px; /* Ubicación del texto encima del botón */
+    width: 150px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Mostrar texto en hover */
+  .floating-button:hover .hover-text {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Animación de movimiento para el fondo */
+  @keyframes moveBackground {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsividad: Ajustes en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .durango{
+        width: 50%;
+    }
+    .banner-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .banner-image {
+      flex: none;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .banner-content {
+      flex: none;
+      width: 100%;
+      padding: 20px;
+      text-align: center; /* Centrado del contenido en pantallas pequeñas */
+    }
+  
+    .main-heading {
+      font-size: 2.5rem; /* Título más pequeño en móviles */
+    }
+  
+    .sub-heading {
+      font-size: 1.3rem; /* Subtítulo más pequeño */
+    }
+  
+    .cta-button {
+      padding: 15px 30px; /* Botón más pequeño */
+    }
+    .floating-buttons {
+        bottom: 10px;
+        right: 10px;
+      }
+    
+      .floating-button {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+      }
+  }
+  
