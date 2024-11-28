@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import '../Estilos/Footer.css';
 import interweb from "../Images/interweb.png"
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 

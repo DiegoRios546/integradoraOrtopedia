@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
 import { FaHome, FaInfoCircle, FaHandshake, FaPhone, FaCalendarAlt } from 'react-icons/fa';
-import './Navbar.css';  // Importando el archivo CSS
+import '../Estilos/Navbar.css';  // Importando el archivo CSS
 import logo from "../Images/logo.png";
+import CitaModal from './CitaModal';
 
 const CustomNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -40,9 +42,10 @@ const CustomNavbar = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <button className="appointment-button">
-              <FaCalendarAlt /> Agendar Cita
-            </button>
+              
+              
+             {/* Pasar el estado showModal y setShowModal al componente AppointmentModal */}
+             <CitaModal showModal={showModal} setShowModal={setShowModal} />
           </NavItem>
         </Nav>
       </Collapse>

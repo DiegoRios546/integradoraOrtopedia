@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBone, FaHeartbeat, FaRunning, FaWheelchair, FaHandsHelping, FaSyringe, FaUserInjured, FaWalking, FaJoint, FaChild } from "react-icons/fa";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
-import "./Servicios.css";
+import "../Estilos/Servicios.css";
 
 const servicesData = [
   {

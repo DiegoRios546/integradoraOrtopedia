@@ -3,7 +3,7 @@ import  { useState } from 'react';
 import { FaBone, FaRunning, FaMedal, FaAward, FaCertificate } from 'react-icons/fa';
 import { GiSpineArrow } from 'react-icons/gi';
 import imgdr from "../Images/dr.png";
-import './Nosotros.css';
+import '../Estilos/Nosotros.css';
 
 const Nosotros = () => {
   const [formData, setFormData] = useState({

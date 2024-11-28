@@ -1,5 +1,5 @@
 import React from 'react';
-import './Banner.css';
+import '../Estilos/Banner.css';
 import imgbanner from "../Images/banner.png";  
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 

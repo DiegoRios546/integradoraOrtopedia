@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Testimonios.css';
+import '../Estilos/Testimonios.css';
 
 const Testimonios = () => {
   const [formData, setFormData] = useState({

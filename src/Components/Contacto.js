@@ -1,5 +1,5 @@
 import React from 'react';
-import './Contacto.css';
+import '../Estilos/Contacto.css';
 import { FaClock, FaPhoneAlt, FaMapMarkerAlt, FaCcVisa, FaCcMastercard, FaCcPaypal } from 'react-icons/fa';
 
 const Contacto = () => {
